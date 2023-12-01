@@ -45,6 +45,6 @@ jobs:
       # Build and push your Docker image to ECR
     - name: Build and push Docker image
       run: |                    
-          docker build -t nginx-for-sapi01 .          
+          docker build -t nginx-for-sapi01:0.1 .          
           docker tag nginx-for-sapi01:0.1 211253560212.dkr.ecr.ap-southeast-2.amazonaws.com/nginx-for-sapi01:0.1          
           docker push 211253560212.dkr.ecr.ap-southeast-2.amazonaws.com/nginx-for-sapi01:0.1
